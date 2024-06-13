@@ -1,63 +1,45 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>To-Do List App</title>
 
     <link rel="stylesheet" href="styles.css" />
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
+      <h1>To-Do List</h1>
 
-        <h1>To-Do List</h1>
+      <form id="todo-form">
+        <input type="text" id="new-task-input" placeholder="Enter a new task" />
 
-        <form id="todo-form">
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="task-list">
+        <div class="todo-item">
+          <li>Eat breakfast</li>
 
-            <input type="text" id="new-task-input" placeholder="Enter a new task" />
-
-            <button type="submit">Add Task</button>
-
-        </form>
-        <ul id="task-list">
-
-            <div class="todo-item">
-
-              <li>Eat breakfast</li>
-
-              <button class="removeButton">Remove</button>
-
-            </div>
-
-            <div class="todo-item">
-
-              <li>Go to school</li>
-
-              <button class="removeButton">Remove</button>
-
-            </div>
-
-            <div class="todo-item">
-
-              <li>Go to work</li>
-
-              <button class="removeButton">Remove</button>
-
-            </div>
-
-          </ul>
-
+          <button class="removeButton">Remove</button>
         </div>
 
-        <script src="index.js"></script>
+        <div class="todo-item">
+          <li>Go to school</li>
 
-      </body>
+          <button class="removeButton">Remove</button>
+        </div>
 
-      
-    </html>
+        <div class="todo-item">
+          <li>Go to work</li>
+
+          <button class="removeButton">Remove</button>
+        </div>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
